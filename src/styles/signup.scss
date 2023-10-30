@@ -1,0 +1,98 @@
+@import "variables";
+
+.signup {
+  max-width: 700px;
+  margin: 5rem auto;
+  border: 1px solid #fafafa;
+  border-radius: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  padding: 3rem 0;
+
+  &-title {
+    margin: 1rem 0 2rem;
+    font-size: 3rem;
+  }
+
+  &-form {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  &-btn {
+    width: 100%;
+    margin-bottom: 0.6rem;
+  }
+
+  &-link {
+    color: $text-semi-transparent;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding-top: 1rem;
+  }
+
+  &-join {
+    color: $primary-red;
+    padding-left: 0.2rem;
+    font-weight: 700;
+  }
+}
+
+.signup__inputGroup {
+  margin-bottom: 1.25rem;
+}
+
+.signup input {
+  background-color: #fafafa;
+  border: 1px solid #dddddd;
+  line-height: 1.9;
+  border-radius: 6px;
+  transition: all 0.2s linear;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  //   padding: 0.4em;
+  font-size: 0.9375rem;
+  color: $text-semi-transparent;
+  padding: 0.6rem;
+  margin: 0 auto;
+
+  &:focus {
+    border: 1px solid #717171;
+    outline: none;
+  }
+
+  &::placeholder {
+    font-family: $text-font;
+    // font-weight: bold;
+    color: #808285;
+    font-size: 0.9375rem;
+    font-weight: 500;
+  }
+}
+
+.text-danger {
+  color: red;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: left;
+}
+
+.registration-success__hidden {
+  display: none;
+}
+
+.success-message {
+  display: block;
+  font-size: 0.85rem;
+  width: 60%;
+  margin: 0 auto;
+  padding: 1.1rem 0.7rem;
+  background-color: #d1e7dd;
+  border: 1px solid #badbcc;
+  border-radius: 6px;
+  text-align: start;
+  color: $text-semi-transparent;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+}

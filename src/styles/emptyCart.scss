@@ -1,0 +1,14 @@
+@import "variables";
+
+.empty-cart__table {
+  padding: 1.5rem 3.5rem;
+  margin: 0 0 2em;
+  background-color: #f7f6f7;
+  color: #515151;
+  font-weight: 500;
+  border-top: 3px solid $primary-red;
+}
+
+.empty-cart__page {
+  margin-bottom: 6.25rem;
+}

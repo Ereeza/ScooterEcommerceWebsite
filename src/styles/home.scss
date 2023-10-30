@@ -1,0 +1,120 @@
+@import "variables";
+
+.banner {
+  margin-top: 3.5rem;
+  padding: 8rem 0;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  div {
+    width: 50%;
+  }
+}
+.banner-title {
+  padding-top: 4rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #000;
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+}
+
+.products-onSale {
+  margin: 7rem 0;
+}
+
+// .show-more__btn {
+//   display: flex;
+//   justify-content: center;
+//   margin: 2rem 0;
+// }
+
+.home-fixed__image {
+  padding: 25rem;
+  background-image: url(https://websitedemos.net/electric-scooter-04/wp-content/uploads/sites/1113/2022/07/bg-03.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  // filter: brightness(0.7);
+  position: relative;
+  margin-bottom: 16rem;
+}
+
+.fixed-image__overlay {
+  position: absolute;
+  top: 14rem;
+  left: 4rem;
+  padding: 3.5rem 8rem;
+  background-color: #f4fafc;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.home-product__title {
+  color: #000;
+  font-size: 1.5rem;
+  // cursor: pointer;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.home-product__price {
+  color: $primary-red;
+  font-weight: 700;
+}
+
+.our-services {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 2.5rem;
+  text-align: center;
+  padding-bottom: 6.25rem;
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-red;
+    padding: 0.6rem;
+    width: 43px;
+    border-radius: 50%;
+    margin-bottom: 0.8rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      width: 35px;
+    }
+  }
+
+  &__title {
+    line-height: 1.8;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 1.6em;
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: $text-semi-transparent;
+  }
+}
+
+.show-more__btn {
+  margin: 2rem auto 0;
+  display: block;
+}

@@ -1,0 +1,224 @@
+@import "variables";
+.myAccount__inputGroup {
+  width: 100%;
+  input {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.35rem;
+    border-radius: 4px;
+    border: 1px solid black;
+    font-size: 0.938rem;
+
+    &:focus {
+      outline: 1px solid #003768;
+      border-radius: 4px;
+    }
+  }
+}
+
+.myAccount__banner {
+  position: relative;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(221, 49, 49) 0%,
+    rgb(119, 0, 0) 90%
+  );
+  width: 100%;
+  height: 250px;
+  max-height: 250px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+}
+
+.myAccount__Card {
+  width: 35%;
+  margin-top: -15rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.8rem;
+}
+
+.myAccount__Card-image {
+  filter: grayscale(60%);
+  border-radius: 7px;
+
+  img {
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    // border-radius: 0.8rem;
+  }
+}
+
+.myAccount__Card-title {
+  padding: 3rem 0;
+}
+
+.myAccount__Card-title h1 {
+  font-family: $title-font;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.myAccount__info {
+  display: flex;
+  padding: 5rem 0;
+}
+
+.myAccount__form-wrapper {
+  width: 65%;
+}
+
+.successfulMessage {
+  padding-left: 2rem;
+  margin-top: 1rem;
+  width: 75%;
+  color: #41a233;
+  font-size: 0.875rem;
+}
+
+.myAccount__form {
+  width: 100%;
+
+  padding-left: 3rem;
+}
+
+.myAccount-form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.myAccount__form label {
+  font-size: 0.875rem;
+}
+
+// .myAccount__inputGroup:nth-child(1) {
+//   grid-column-start: 1;
+//   grid-column-end: 3;
+// }
+
+// .myAccount__inputGroup:nth-child(4) {
+//   display: flex;
+//   gap: 0.5rem;
+//   grid-column-start: 2;
+// }
+
+.myAccount__buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.2rem 0;
+}
+
+.myAccount__cancel {
+  background-color: #fff;
+  color: $primary-red;
+  font-weight: 600;
+  border: 1px solid $primary-red;
+  transition: 0.3s;
+}
+
+.myAccount__cancel:hover {
+  background-color: $primary-red;
+  color: #fff;
+}
+
+.myAccount__btn {
+  margin-left: 1rem;
+}
+
+.errors {
+  font-size: 0.7rem;
+  color: red;
+}
+
+// @import "variables";
+
+// .profile-header {
+//   background-color: $primary-red;
+//   padding: 3rem 5rem;
+//   font-family: $title-font;
+
+//   &__name {
+//     color: $text-semi-transparent;
+//     margin-bottom: 0.6rem;
+//     text-transform: uppercase;
+//   }
+
+//   &__address {
+//     font-weight: 500;
+//     font-size: 1.15rem;
+//   }
+// }
+
+// .profile-nav {
+//   padding: 3rem 3rem 16rem 3rem;
+//   list-style-type: none;
+//   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+//   max-width: 300px;
+
+//   &__item {
+//     padding: 0.6rem;
+//     font-size: 1.1rem;
+//     text-align: center;
+//     // text-transform: uppercase;
+//     line-height: 1.8;
+
+//     border-radius: 2px;
+//     font-weight: 600;
+//     cursor: pointer;
+
+//     &:hover,
+//     &:active {
+//       border-bottom: 3px solid $primary-red;
+//     }
+//   }
+// }
+
+// .banner-content {
+//   padding: 3.5rem 3rem;
+//   font-size: 1.5rem;
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.banner-content {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+  }
+
+  h1 {
+    width: 70%;
+  }
+}
+
+.sign-out {
+  background-color: black;
+
+  //   &:hover {
+  //     background-color: $primary-red;
+  //   }
+}
+
+.not-logged-in {
+  padding: 5rem;
+  width: 500px;
+  //   max-width: 400px;
+  margin: 6rem auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  font-weight: 600;
+
+  span {
+    color: $primary-red;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,60 @@
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $text-font;
+  background-color: #fff;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-family: $title-font;
+  font-weight: 700;
+}
+.container {
+  width: 80%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.active {
+  color: #cc3535;
+}
+
+.bg-circle {
+  background-image: url(../assets/images/banner-bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.sup-title {
+  color: $text-semi-transparent;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: $title-font;
+  text-transform: uppercase;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+// @media (max-width: 980px) {
+//   .container {
+//     width: 90%;
+//   }
+// }

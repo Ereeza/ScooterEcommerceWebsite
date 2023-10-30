@@ -1,0 +1,102 @@
+@import "variables";
+
+.product-details {
+  padding: 6rem 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+
+  // &__section {
+  //   width: 50%;
+  // }
+
+  &__info {
+    width: 50%;
+  }
+
+  &__category {
+    color: $primary-red;
+    font-weight: 600;
+    line-height: 1.8;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+  }
+
+  &__title {
+    font-family: $title-font;
+    margin-bottom: 0.5rem;
+    line-height: 1.8;
+  }
+
+  &__price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.8;
+  }
+
+  &__shipping {
+    font-size: 0.9375rem;
+    color: $text-semi-transparent;
+    font-weight: 600;
+  }
+
+  &__desc {
+    color: $text-semi-transparent;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.8;
+  }
+}
+
+.product-info {
+  font-size: 1.06rem;
+  font-family: $title-font;
+  padding: 10px 0;
+}
+
+.product-desc {
+  font-family: $title-font;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.product-right {
+  padding-left: 150px;
+}
+
+.product-text {
+  font-size: 15px;
+  font-family: $text-font;
+  color: $text-semi-transparent;
+  font-weight: 500;
+}
+
+.product-quantity__flex {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.product__payment {
+  text-align: center;
+  color: $text-semi-transparent;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  padding: 1.7rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.viewCartHidden {
+  display: none;
+}
+
+.viewCartShown {
+  display: inline;
+  display: flex;
+  align-items: center;
+  color: $primary-red;
+  font-weight: 600;
+}

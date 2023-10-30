@@ -1,0 +1,43 @@
+@import "variables";
+
+.quantity-counter {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  //   max-width: 100px;
+  color: $text-semi-transparent;
+  font-weight: 400;
+
+  &__btn {
+    // border: none;
+    // padding: 0.5 1rem;
+    // background-color: none;
+    // font-size: 13px;
+
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0 10px;
+    color: $text-semi-transparent;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.quantity-counter__input {
+  max-width: 30px;
+  background-color: white;
+  border: none;
+  text-align: center;
+  padding: 0;
+
+  &:focus {
+    border: none;
+  }
+}

@@ -1,0 +1,32 @@
+@import "variables";
+
+.section-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6.25rem 0;
+
+  &__container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__data {
+    width: 80%;
+    align-items: center;
+    font-family: $title-font;
+    font-weight: 600;
+  }
+
+  &__title {
+    font-size: 3.4rem;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 2rem;
+    line-height: 1.4;
+    // font-weight: 500;
+  }
+}

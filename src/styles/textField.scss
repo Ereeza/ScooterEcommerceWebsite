@@ -1,0 +1,32 @@
+@import "variables";
+
+input {
+  background-color: #fafafa;
+  border: 1px solid #dddddd;
+  line-height: 1.9;
+  border-radius: 2px;
+  transition: all 0.2s linear;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.4em;
+  font-size: 0.9375rem;
+  color: $text-semi-transparent;
+
+  &:focus {
+    border: 1px solid #717171;
+    outline: none;
+  }
+
+  &::placeholder {
+    font-family: $text-font;
+    // font-weight: bold;
+    color: #808285;
+    font-size: 0.9375rem;
+    font-weight: 500;
+  }
+}
+
+.footer-inputField {
+  margin-bottom: 1rem;
+}
