@@ -47,10 +47,8 @@ const Profile = () => {
 
   const onSubmit = (action, data) => {
     if (action === "cancel") {
-      // Reset the form to default values
       reset(defaultFormValues);
     } else {
-      // Update the user with the new data
       updateUser(data);
       setDefaultFormValues({
         firstName: data.firstName,
@@ -71,7 +69,7 @@ const Profile = () => {
         {login ? (
           <>
             <div className="myAccount__banner">
-              <div className="banner-content">
+              <div className="myAccount-content">
                 <div>
                   {user.firstName && <h1>{user.firstName}'s Profile</h1>}
                   <Link to="/signin">
@@ -142,9 +140,6 @@ const Profile = () => {
                     </div>
                   </div>
                   <div className="myAccount__buttons">
-                    {/* <a href="index.html" class="myAccount__cancel">
-                Cancel
-              </a> */}
                     <div>
                       <Button
                         className="button myAccount__cancel"
@@ -180,8 +175,6 @@ const Profile = () => {
               Please <span onClick={handleLogin}>Log in </span> to view this
               page
             </p>
-            {/* You can also add a link to the login page if needed */}
-            {/* <Link to="/signin">Login</Link> */}
           </div>
         )}
       </main>

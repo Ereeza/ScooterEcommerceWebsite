@@ -3,7 +3,6 @@ import "../../styles/textField.scss";
 
 const TextField = (props) => {
   return (
-    // <div className="textField">
     <input
       type={props.type}
       id={props.id}
@@ -13,7 +12,6 @@ const TextField = (props) => {
       onChange={props.onChange}
       onKeyDown={props.onKeyDown}
     />
-    // </div>
   );
 };
 

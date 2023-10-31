@@ -2,13 +2,9 @@ import React, { useEffect, useState } from "react";
 import { products } from "../data/dummyData";
 import "../styles/shop.scss";
 import "../styles/productCard.scss";
-
-import tune from "../assets/icons/tune.png";
-import fourSquares from "../assets/icons/four-squares.png";
-import columns from "../assets/icons/column.png";
 import ProductCard from "../components/ProductCard";
 import Filter from "../components/Filter";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import FilterProducts from "./FilterProducts";
 import { useSearchParams } from "react-router-dom";
 
@@ -17,11 +13,6 @@ const ProductsDisplay = () => {
   const [filterPageVisible, setFilterPageVisible] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [sortOrder, setSortOrder] = useState("default-sorting");
-
-  //   const navigate = useNavigate();
-  //   const location = useLocation();
-
-  // console.log("navigate", navigate());
 
   const [searchParams] = useSearchParams();
   console.log(searchParams.get("search"), "HI ");
@@ -32,11 +23,11 @@ const ProductsDisplay = () => {
 
   console.log("params", category);
 
-  useEffect(() => window.scrollTo(0, 0), []); //should I add this on a custom hook or write it on every component
+  useEffect(() => window.scrollTo(0, 0), []);
 
   const resetFilters = () => {
     setSelectedCategory("All");
-    navigate(`/shop`); // Remove the search text from the URL
+    navigate(`/shop`);
   };
 
   const sortProducts = (order, products) => {
@@ -45,7 +36,6 @@ const ProductsDisplay = () => {
     } else if (order === "high-to-low") {
       return products.slice().sort((a, b) => b.price - a.price);
     } else {
-      // Default sorting or any custom logic
       return products;
     }
   };
@@ -62,25 +52,9 @@ const ProductsDisplay = () => {
     setFilterPageVisible((prev) => !prev);
   };
 
-  // const handleCategorySelect = (category) => {
-  //   setSelectedCategory(category);
-  //   navigate(`/shop/${category}`);
-  // };
-
-  // Modify the handleCategorySelect function to include searchText in the URL
   const handleCategorySelect = (category) => {
-    // setSelectedCategory(category);
-    // navigate(`/shop/${category}?search=${searchText}`); // Include searchText in the URL
     navigate(`/shop/${category}`);
   };
-  // const handleSearch = () => {
-  //   navigate(`/shop?category=${selectedCategory}&search=${searchText}`);
-  // };
-
-  // const filteredProducts =
-  //   selectedCategory === "All"
-  //     ? products.product
-  //     : products.product.filter((item) => item.category === selectedCategory);
 
   const filteredProducts = products.product.filter((item) => {
     const categoryMatches =
@@ -96,17 +70,6 @@ const ProductsDisplay = () => {
   });
 
   const sortedProducts = sortProducts(sortOrder, filteredProducts);
-
-  // const filteredProducts = products.product.filter((item) => {
-  //   const categoryMatch =
-  //     selectedCategory === "All" || item.category === selectedCategory;
-
-  //   const searchMatch =
-  //     searchText === "" ||
-  //     item.name.toLowerCase().includes(searchText.toLowerCase());
-
-  //   return categoryMatch && searchMatch;
-  // });
 
   return (
     <>

@@ -31,16 +31,6 @@ const SignUp = () => {
       .required("Password is required"),
   });
 
-  //   const handleRegistration = (data) => {
-  //     registerUser(data);
-  //     if (userError) {
-  //       console.log("Registration userError:", userError);
-  //     } else {
-  //       setSuccessMessage("You are registered successfully. Please");
-  //       console.log("User registered:", data);
-  //     }
-  //   };
-
   const {
     register,
     handleSubmit,
@@ -63,38 +53,10 @@ const SignUp = () => {
   };
   console.log("error", errors);
 
-  //   const handleError = (errors) => {};
-
-  //   const registerOptions = {
-  //     firstName: { required: "First Name is required" },
-  //     lastName: { required: "Last Name is required" },
-  //     address: { required: "Address is required" },
-  //     email: { required: "Email is required" },
-  //     password: {
-  //       required: "Password is required",
-  //       minLength: {
-  //         value: 8,
-  //         message: "Password must have at least 8 characters",
-  //       },
-  //     },
-  //   };
-
-  //   const handleEmailChange = (event) => {
-  //     setEmail(event.target.value); // Update the email state when the input changes
-  //   };
-
   return (
     <div className="signup__wrapper">
       <div className="signup-main container ">
         <div className="signup">
-          {/* {successMessage && (
-            <div className="success-message">
-              {successMessage}
-              <Link to="/signin" className="signIn-join">
-                Sign in
-              </Link>
-            </div>
-          )} */}
           <div>
             <Link to={"/signIn"} className="signIn-link">
               Already have an account?
@@ -161,55 +123,6 @@ const SignUp = () => {
             <Button className="button signup-btn" type="submit">
               Sign up
             </Button>
-
-            {/* <TextField
-              type="text"
-              id="firstName"
-              name="firstName"
-              className="signIn-input"
-              placeholder="First Name"
-            />
-            <TextField
-              type="text"
-              id="lastName"
-              name="lastName"
-              className="signIn-input"
-              placeholder="Last Name"
-            />
-            <TextField
-              type="text"
-              id="email"
-              name="email"
-              className="signIn-input"
-              placeholder="Email"
-            /> */}
-
-            {/* <TextField
-              type="password"
-              id="password"
-              name="password"
-              className="signIn-input"
-              placeholder="Password"
-            />
-
-            <div className="agreement__wrapper">
-              <TextField
-                type="checkbox"
-                id="agreement"
-                name="agreement"
-                className="agreement"
-                value="agreement"
-              />
-              <span for="agreement" className="agreement-span">
-                I agree to the Terms&Conditions
-              </span> */}
-            {/* </div> */}
-
-            {/* <Button className="button signIn-btn">Create Account</Button>
-            <Link to={"/signIn"} className="signIn-link">
-              Already have an account?
-              <span className="signIn-join">Sign in</span>
-            </Link> */}
           </form>
         </div>
       </div>

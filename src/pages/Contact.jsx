@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <div className="bg-circle">
       <IntroHeader title={contactData.title} text={contactData.text} />
-      {/* <div className="contact-main"> */}
+
       <div className="contact-main container">
         <div className="contact-details">
           <h6 className="sup-title">Contact Details</h6>
@@ -71,7 +71,6 @@ const Contact = () => {
         </form>
       </div>
     </div>
-    // </div>
   );
 };
 

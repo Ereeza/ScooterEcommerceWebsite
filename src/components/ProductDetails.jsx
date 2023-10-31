@@ -15,7 +15,6 @@ const ProductDetails = () => {
 
   const { cartItems, addToCart } = useContext(CartContext);
 
-  // Convert hyphens back to spaces in the title
   const decodedTitle = title.replace(/-/g, " ");
 
   useEffect(() => {
@@ -27,7 +26,6 @@ const ProductDetails = () => {
   }, [decodedTitle]);
 
   if (!productDetails) {
-    // Handle case where product details are loading or not found
     return <div>Product not found</div>;
   }
 
@@ -59,25 +57,7 @@ const ProductDetails = () => {
           <p className="product-details__desc">{productDetails.description}</p>
           <div className="product-quantity__flex">
             <QuantityCounter quantity={quantity} setQuantity={setQuantity} />
-            {/* <div className="flex gap-4">
-              <button
-                className="px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded hover:bg-gray-700 focus:outline-none focus:bg-gray-700"
-                onClick={() => {
-                  addToCart(productDetails);
-                }}
-              >
-                +
-              </button>
-              <p>{productDetails.quantity}</p>
-              <button
-                className="px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded hover:bg-gray-700 focus:outline-none focus:bg-gray-700"
-                onClick={() => {
-                  removeFromCart(productDetails);
-                }}
-              >
-                -
-              </button>
-            </div> */}
+
             <Button className="button" onClick={handleAddToCartClick}>
               Add to cart
             </Button>

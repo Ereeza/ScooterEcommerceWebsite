@@ -21,15 +21,10 @@ const Filter = (props) => {
   const { category } = useParams();
   const categoryValue = category || "";
 
-  // function handleChanges(event, newValue) {
-  //   setRange(newValue);
-  // }
-
   function handleChanges(event, newValue) {
     const minPrice = newValue[0];
     let maxPrice = newValue[1];
 
-    // Ensure maxPrice is at least 1 higher than minPrice
     if (maxPrice <= minPrice) {
       maxPrice = minPrice + 1;
     }

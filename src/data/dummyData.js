@@ -17,18 +17,6 @@ import accessory3 from "../assets/images/accessory3.jpg";
 import accessory4 from "../assets/images/accessory4.jpg";
 import accessory5 from "../assets/images/accessory5.jpg";
 import accessory6 from "../assets/images/accessory6.jpg";
-// import stripe from "../assets/images/payment-stripe.png";
-// import paypal from "../assets/images/payment-paypal.png";
-// import aexpress from "../assets/images/payment-aexpress.png";
-// import visa from "../assets/images/payment-visa.png";
-// import mastercard from "../assets/images/payment-mastercard.png";
-
-
-
-
-
-
-
 
 
 const navData = {
@@ -257,30 +245,6 @@ const footerData = {
     ]
 }
 
-// const footerPaymentData = {
-//     paymentIcons: [
-//         {
-//             id: 1,
-//             img: stripe
-//         },
-//         {
-//             id: 2,
-//             img: paypal
-//         },
-//         {
-//             id: 3,
-//             img: aexpress
-//         },
-//         {
-//             id: 4,
-//             img: visa
-//         },
-//         {
-//             id: 5,
-//             img: mastercard
-//         }
-//     ]
-// }
 
 export {
     navData, products, aboutUsData, contactData, footerData

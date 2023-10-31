@@ -52,7 +52,6 @@ const About = () => {
       </div>
       <div className="about-fixed__image"></div>
       <div className="about-image__overlay"></div>
-      {/* kqyr a tka funksionu */}
     </div>
   );
 };

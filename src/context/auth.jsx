@@ -6,12 +6,10 @@ export const AuthContext = createContext();
 
 const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState(() => {
-    // Initialize user from local storage or an empty array if not found
     return JSON.parse(localStorage.getItem("user")) || [];
   });
 
   const [login, setLogin] = useState(() => {
-    // Initialize user from local storage or an empty array if not found
     return JSON.parse(localStorage.getItem("login")) || "";
   });
 
@@ -19,25 +17,12 @@ const AuthContextProvider = ({ children }) => {
   const [authenticatedUser, setAuthenticatedUser] = useState(null);
 
   const registerUser = (userData) => {
-    // Check if the email already exists
-    // const emailExists = users.some((user) => user.email === userData.email);
-
-    // if (emailExists) {
-    //   setUserError("Email already registered.");
-    // } else {
-    //   const updatedUsers = [...users, userData];
-    //   setUsers(updatedUsers);
-    //   setUserError(null); // Clear any previous error
     setUser(userData);
     localStorage.setItem("user", JSON.stringify(userData));
     toast.success("You have registered successfully.");
   };
 
   const loginUser = (userData) => {
-    // const user = user.find(
-    //   (user) => user.email === email && user.password === password
-    // );
-
     if (userData.email === user.email && userData.password === user.password) {
       localStorage.setItem("login", true);
       setLogin(JSON.parse(localStorage.getItem("login")));

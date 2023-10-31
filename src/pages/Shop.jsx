@@ -22,7 +22,7 @@ const Shop = () => {
   const minPrice = searchParams.get("minPrice") || "";
   const maxPrice = searchParams.get("maxPrice") || "";
 
-  useEffect(() => window.scrollTo(0, 0), []); //should I add this on a custom hook or write it on every component
+  useEffect(() => window.scrollTo(0, 0), []);
 
   const handleSortChange = (selectedSort) => {
     setSortOrder(selectedSort);
@@ -110,7 +110,6 @@ const Shop = () => {
             onClose={() => setFilterPageVisible(false)}
             onCategorySelect={handleCategorySelect}
             onSortChange={handleSortChange}
-            // onPriceSelect={handlePriceSelect}
             search={handleSearch}
           />
         )}

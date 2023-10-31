@@ -32,13 +32,6 @@
     font-weight: 700;
   }
 
-  // &-input {
-  //   // width: 60%;
-  //   padding: 0.6rem;
-  //   border-radius: 6px;
-  //   margin: 0 auto 1.5rem auto;
-  // }
-
   &-btn {
     width: 100%;
     margin-bottom: 0.6rem;
@@ -70,7 +63,6 @@
   display: flex;
   align-items: center;
   width: 100%;
-  //   padding: 0.4em;
   font-size: 0.9375rem;
   color: $text-semi-transparent;
   padding: 0.6rem;
@@ -83,7 +75,6 @@
 
   &::placeholder {
     font-family: $text-font;
-    // font-weight: bold;
     color: #808285;
     font-size: 0.9375rem;
     font-weight: 500;

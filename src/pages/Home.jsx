@@ -6,30 +6,56 @@ import send from "../assets/images/send.png";
 import lock from "../assets/images/lock.png";
 import banner from "../assets/images/banner.png";
 
-import ProductDetails from "../components/ProductDetails";
 import { products } from "../data/dummyData.js";
 import ProductCard from "../components/ProductCard";
 import Button from "../components/Shared/Button.jsx";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  // Filter the products to get only those with onSale equal to true
   const onSaleProducts = products.product.filter((item) => item.onSale);
   const limitedOnSaleProducts = onSaleProducts.slice(0, 4);
 
   return (
     <div className="home">
       <div className="banner bg-circle">
-        <div className="banner-content container">
-          <img src={banner} alt="" />
-          <div className="banner-title">
-            <h1>Electric Scooters</h1>
+        <div className="banner-content">
+          <div className="banner-left">
+            <h1 className="banner-title">Libero X250</h1>
+            <h2 className="banner-subtitle">250 Watt Electric Scooter</h2>
 
-            <h2>To make your adventure better</h2>
-            <Button className="button">Shop Now</Button>
+            <div className="banner-info">
+              <h4>Informations:</h4>
+
+              <div className="banner-info__wrapper">
+                <div className="banner-info__box">
+                  <p>30 km</p> <span>battery</span>
+                </div>
+                <div className="banner-info__box">
+                  <p>13 km</p> <span>kg</span>
+                </div>
+                <div className="banner-info__box">
+                  <p>25 km</p> <span>km/h</span>
+                </div>
+              </div>
+            </div>
+            <div className="banner-btn">
+              <Button className="button">Shop now</Button>
+            </div>
+          </div>
+
+          <img src={banner} alt="" />
+
+          <div className="banner-desc">
+            <div className="banner-desc__content">
+              <h3 className="banner-desc__title">Description</h3>
+              <p className="banner-desc__text">
+                The Fully Loaded Libero x250 is a High Performance, Extremely
+                Durable, High Speed, Lightweight Electric Scooter with a Huge
+                Battery
+              </p>
+            </div>
           </div>
         </div>
-        <div></div>
       </div>
       <div className=" products-onSale">
         <div className={`products-grid container simple-card`}>
@@ -37,9 +63,8 @@ const Home = () => {
             <ProductCard key={item.id} product={item} />
           ))}
         </div>
-        {/* <div className=" show-more__btn"> */}
+
         <Button className="button show-more__btn">Shop Now</Button>
-        {/* </div> */}
       </div>
 
       <div className="section-seperator__wrapper">

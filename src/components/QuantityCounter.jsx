@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "../styles/quantityCounter.scss";
 
 function QuantityCounter({ quantity, setQuantity }) {
-  // const [quantity, setQuantity] = useState(1);
-
   const incrementQuantity = () => {
     setQuantity(quantity + 1);
   };

@@ -3,11 +3,6 @@
 .footer {
   background-color: $light-background;
 
-  // position: fixed;
-  // bottom: 0;
-  // width: 100%;
-  // max-height: 500px;
-
   &-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -36,7 +31,6 @@
   &__text,
   &__list li {
     color: $text-semi-transparent;
-    // font-family: $text-font;
     font-size: 0.9375rem;
     font-weight: 500;
     line-height: 1.85;

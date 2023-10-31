@@ -6,26 +6,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  // position: fixed;
   background: rgba(0, 0, 0, 0.4);
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out,
     max-height 0.3s ease-in-out;
 }
 
-// .filter-page {
-//   // display: none;
-//   // visibility: hidden;
-//   // opacity: 0;
-
-//   // max-height: 0;
-//   // overflow: hidden;
-//   // transition: max-height 0.3s ease-in-out;
-// }
-
 .filter-page__visible {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
   display: block;
   visibility: visible;
   opacity: 1;
@@ -35,7 +21,6 @@
   max-width: 325px;
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
   background-color: #fff;
-  //   overflow: auto;
   transition: 0.8s ease-in-out;
   position: fixed;
 
@@ -55,10 +40,6 @@
     margin-bottom: 1rem;
   }
 }
-
-// .css-187mznn-MuiSlider-root {
-//   color: $primary-red !important;
-// }
 
 .price-slider {
   color: $primary-red !important;

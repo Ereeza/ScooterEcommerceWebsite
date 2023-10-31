@@ -55,18 +55,7 @@ const SignIn = () => {
               <small className="text-danger">
                 {errors?.email && errors.email.message}
               </small>
-              <input
-                type="email"
-                placeholder="Email"
-                // onChange={handleEmailChange}
-                {...register("email")}
-              />
-
-              {/* <small className="text-danger">
-                {userError === "Email already registered." && (
-                  <span style={{ color: "red" }}>{userError}</span>
-                )}
-              </small> */}
+              <input type="email" placeholder="Email" {...register("email")} />
             </div>
             <div>
               <small className="text-danger">

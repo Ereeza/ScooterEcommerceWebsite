@@ -1,6 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom"; // Import the Link component
-import { products } from "../data/dummyData.js";
+import { Link } from "react-router-dom";
 import ImageZoom from "./ImageZoom.jsx";
 import basketCart from "../assets/icons/basketCart.png";
 import "../styles/productCard.scss";
@@ -13,7 +12,6 @@ const ProductCard = ({ cardType, product }) => {
   return (
     <>
       <div className={`product-card ${cardType}__product`}>
-        {/* Wrap the image with a Link component */}
         <div className={`product-card__image ${cardType}__image`}>
           <Link to={`/product-details/${generateUrlTitle(product.title)}`}>
             <ImageZoom imageUrl={product.img} />
