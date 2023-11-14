@@ -127,6 +127,7 @@ const Filter = (props) => {
               </select>
             </div>
           </div>
+          <div className="filter-page__dark" onClick={handleFilterClose}></div>
         </div>
       )}
     </>
