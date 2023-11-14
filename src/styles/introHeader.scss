@@ -30,3 +30,22 @@
     // font-weight: 500;
   }
 }
+@media (max-width: 1200px) {
+  .section-intro__container {
+    width: 100%;
+  }
+
+  .section-intro__text {
+    font-size: 1.7rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 700px) {
+  .section-intro__title {
+    font-size: 3rem;
+  }
+  .section-intro__text {
+    font-size: 1.3rem;
+  }
+}

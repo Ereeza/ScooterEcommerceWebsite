@@ -36,3 +36,9 @@
   // padding: 2.5rem;
   margin-top: 3.5rem;
 }
+
+@media (max-width: 1024px) {
+  .products-display {
+    margin: 3rem auto;
+  }
+}

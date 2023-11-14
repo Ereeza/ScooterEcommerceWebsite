@@ -58,3 +58,9 @@
   width: 50%;
   margin: auto;
 }
+
+@media (max-width: 1000px) {
+  .button {
+    font-size: 0.7rem;
+  }
+}

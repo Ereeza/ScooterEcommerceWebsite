@@ -94,3 +94,9 @@
   font-weight: 500;
   margin-bottom: 0.7rem;
 }
+
+@media (max-width: 600px) {
+  .signup-form {
+    width: 85%;
+  }
+}

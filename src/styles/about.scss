@@ -16,9 +16,10 @@
 }
 
 .about-founders {
-  max-height: 670px;
+  // max-height: 670px;
   display: flex;
   margin-bottom: 6.25rem;
+  gap: 1.5rem;
 
   div {
     width: 50%;
@@ -26,8 +27,8 @@
 
   &__text {
     text-align: left;
-    padding: 6.25rem;
-    padding-left: 0;
+    // padding: 6.25rem;
+    // padding-left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,4 +67,39 @@
   background-size: cover;
   background-attachment: fixed;
   filter: brightness(0.7);
+}
+
+@media (max-width: 1050px) {
+  .about-section__title {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-section__title {
+    font-size: 1.7em;
+  }
+
+  .about-section__text {
+    font-size: 0.85rem;
+  }
+
+  .about-fixed__image {
+    padding: 10rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .about-founders {
+    flex-direction: column;
+    height: auto;
+
+    div {
+      width: 100%;
+    }
+  }
+
+  .about-founders__text {
+    text-align: center;
+  }
 }

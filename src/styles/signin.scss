@@ -107,3 +107,9 @@
   color: $primary-red;
   font-weight: 700;
 }
+
+@media (max-width: 600px) {
+  .signIn-form {
+    width: 85%;
+  }
+}

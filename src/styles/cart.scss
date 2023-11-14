@@ -54,3 +54,18 @@ td {
 .cart-footer {
   text-align: center;
 }
+
+@media (max-width: 1200px) {
+  .cart-tables {
+    flex-direction: column;
+  }
+
+  .cart-table {
+    width: 100%;
+  }
+
+  .button-center {
+    display: flex;
+    justify-content: center;
+  }
+}

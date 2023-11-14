@@ -3,6 +3,7 @@
 .contact-main {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   font-size: 0.9375rem;
   margin-bottom: 6.25rem;
 
@@ -91,4 +92,27 @@ button[disabled] {
   border: 1px solid #999999;
   background-color: #cccccc;
   color: #666666;
+}
+
+@media (max-width: 920px) {
+  .contact-main {
+    flex-direction: column;
+    gap: 2rem;
+
+    .contact-main__child {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .sup-title,
+  .contact-details__text {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .input-name {
+    flex-direction: column;
+  }
 }

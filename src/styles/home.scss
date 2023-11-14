@@ -178,3 +178,150 @@
   margin: 2rem auto 0;
   display: block;
 }
+
+@media (max-width: 1200px) {
+  .banner {
+    padding: 5rem 5.2rem;
+  }
+  .banner-content {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    & > div {
+      width: 100%;
+    }
+  }
+
+  .banner-desc {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  .banner-desc__content {
+    margin: 3rem;
+  }
+
+  .banner-btn {
+    margin-top: 1.5rem;
+  }
+
+  .banner-title {
+    line-height: normal;
+  }
+
+  .our-services__title {
+    font-size: 1.1rem;
+  }
+
+  .home-fixed__image {
+    padding: 20rem 0;
+  }
+
+  .fixed-image__overlay {
+    top: 8rem;
+    left: 4rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .banner {
+    padding: 5rem 5.2rem;
+  }
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    & > div {
+      width: 100%;
+    }
+  }
+
+  .banner-left {
+    order: 2;
+  }
+
+  .banner-img {
+    width: 70%;
+    margin: 0 auto 2rem;
+  }
+
+  .banner-info__wrapper {
+    display: flex;
+    justify-content: space-between;
+    // gap: 1rem;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+
+  .banner-title {
+    font-size: 3rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .banner-desc {
+    display: none;
+    // grid-column: span 2;
+    // text-align: center;
+  }
+
+  // .banner-desc__content {
+  //   margin: 3rem;
+  // }
+
+  .banner-info__box {
+    font-size: 0.95rem;
+    width: 70px;
+    padding: 0;
+  }
+  .banner-btn {
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+
+  .banner-title {
+    line-height: normal;
+  }
+
+  .home-fixed__image {
+    padding: 20rem 0;
+  }
+
+  .fixed-image__overlay {
+    top: 8rem;
+    left: 4rem;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .our-services {
+    flex-direction: column;
+  }
+
+  .products-onSale {
+    margin: 3rem 0;
+    .simple-card {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .home-fixed__image {
+    padding: 15rem 0;
+  }
+  .fixed-image__overlay {
+    width: 285px;
+  }
+}
+
+@media (max-width: 420px) {
+  .fixed-image__overlay {
+    top: 6rem;
+    left: 0.6rem;
+  }
+}

@@ -121,7 +121,7 @@ const Cart = () => {
             </tbody>
             <tfoot>
               <tr>
-                <td>
+                <td colSpan="2">
                   <div className="button-center">
                     <Link to="/checkout">
                       <Button className="button checkout-btn">Checkout</Button>

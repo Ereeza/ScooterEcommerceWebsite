@@ -13,7 +13,7 @@ const Contact = () => {
       <IntroHeader title={contactData.title} text={contactData.text} />
 
       <div className="contact-main container">
-        <div className="contact-details">
+        <div className="contact-details contact-main__child">
           <h6 className="sup-title">Contact Details</h6>
           <p className="contact-details__text">
             <b>E:</b> <a href="#">info@example.com</a>
@@ -25,7 +25,10 @@ const Contact = () => {
           <h6 className="sup-title">Follow us</h6>
           <div></div>
         </div>
-        <form onSubmit={handleSubmit} className="contact-form">
+        <form
+          onSubmit={handleSubmit}
+          className="contact-form contact-main__child"
+        >
           <div className="contact-inputGroup input-name">
             <div>
               <label htmlFor="firstname">First Name</label>
