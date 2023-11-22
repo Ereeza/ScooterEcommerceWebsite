@@ -56,6 +56,11 @@ td {
 }
 
 @media (max-width: 1200px) {
+  .cart-title {
+    font-size: 3.4rem;
+    padding-top: 3rem;
+  }
+
   .cart-tables {
     flex-direction: column;
   }
@@ -67,5 +72,15 @@ td {
   .button-center {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .cart-table {
+    font-size: 0.75rem;
+  }
+  td {
+    text-align: center;
+    padding: 5px 2px;
   }
 }

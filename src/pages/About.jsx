@@ -2,8 +2,10 @@ import IntroHeader from "../components/IntroHeader";
 import { aboutUsData } from "../data/dummyData";
 import founders from "../assets/images/founders.png";
 import "../styles/about.scss";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => window.scrollTo(0, 0), []);
   return (
     <div className=" about bg-circle">
       <IntroHeader title={aboutUsData.title} text={aboutUsData.text} />

@@ -6,6 +6,7 @@ import { footerData } from "../data/dummyData";
 import paymentIcons from "../assets/images/payment-icons.png";
 import Button from "./Shared/Button";
 import TextField from "./Shared/TextField";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -23,7 +24,7 @@ const Footer = () => {
         <div className="footer-block">
           <h5 className="footer-block__title">Contact us</h5>
           <p className="footer-block__text">
-            <b>E:</b> <a href="#">info@example.com</a>
+            <b>E:</b> <a href="mailto:info@example.com">info@example.com</a>
             <br />
             <b>P:</b> +1 234 567 890
             <br />
@@ -35,7 +36,9 @@ const Footer = () => {
           <div>
             <ul className="footer-block__list">
               {footerData.navList.map((item) => (
-                <li key={item.id}>{item.title}</li>
+                <li key={item.id}>
+                  <Link to={`${item.title}`}>{item.title}</Link>
+                </li>
               ))}
             </ul>
           </div>

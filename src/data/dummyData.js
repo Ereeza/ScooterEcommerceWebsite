@@ -224,15 +224,7 @@ const footerData = {
     navList: [
         {
             id: 1,
-            title: "Shop All"
-        },
-        {
-            id: 2,
-            title: "Electric Scooters"
-        },
-        {
-            id: 3,
-            title: "Accessories"
+            title: "Shop"
         },
         {
             id: 4,

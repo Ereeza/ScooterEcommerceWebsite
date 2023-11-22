@@ -10,8 +10,10 @@ import { products } from "../data/dummyData.js";
 import ProductCard from "../components/ProductCard";
 import Button from "../components/Shared/Button.jsx";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => window.scrollTo(0, 0), []);
   const onSaleProducts = products.product.filter((item) => item.onSale);
   const limitedOnSaleProducts = onSaleProducts.slice(0, 4);
 

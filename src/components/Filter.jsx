@@ -1,8 +1,5 @@
 import "../styles/filter.scss";
-
 import Button from "./Shared/Button";
-import TextField from "./Shared/TextField";
-import search from "../assets/images/search-icon.png";
 import React, { useState } from "react";
 import Slider from "@mui/material/Slider";
 import SearchBar from "./SearchBar";
@@ -39,10 +36,9 @@ const Filter = (props) => {
   const handleSortChange = (selectedSort) => {
     props.onSortChange(selectedSort);
   };
-
+  const currentSearchText = searchParams.get("search") || "";
   const handlePriceSelect = () => {
-    const currentSearchText = searchParams.get("search") || "";
-    console.log(category, currentSearchText); // Use the category from useParams
+    console.log(category, currentSearchText);
     navigate(
       `/shop/${categoryValue}?search=${currentSearchText}&minPrice=${range[0]}&maxPrice=${range[1]}`
     );
@@ -102,11 +98,6 @@ const Filter = (props) => {
                   <p>Electric Scooters</p>
                 </div>
               </div>
-
-              <div className="product-category">
-                <p>On Sale</p>
-              </div>
-
               <div className="product-category">
                 <Link to={"/shop"}>
                   <p className="category-allProducts">All Products</p>

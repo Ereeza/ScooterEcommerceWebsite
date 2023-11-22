@@ -319,6 +319,33 @@
   }
 }
 
+@media (max-width: 520px) {
+  .banner {
+    padding: 4rem;
+    &-title {
+      font-size: 2rem;
+    }
+    &-info {
+      font-size: 0.85rem;
+      &__wrapper {
+        width: 100%;
+        gap: 0.5rem;
+      }
+      &__box {
+        font-size: 0.9rem;
+        padding: 0;
+        height: 100px;
+        width: 65px;
+
+        span {
+          font-size: 0.6rem;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 420px) {
   .fixed-image__overlay {
     top: 6rem;

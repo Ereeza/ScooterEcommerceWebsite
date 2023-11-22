@@ -15,11 +15,12 @@ const ProductCard = ({ cardType, product }) => {
         <div className={`product-card__image ${cardType}__image`}>
           <Link to={`/product-details/${generateUrlTitle(product.title)}`}>
             <ImageZoom imageUrl={product.img} />
+
+            <div className="product-basketCart">
+              <img src={basketCart} alt="basket cart" />
+            </div>
           </Link>
           {product.onSale && <div className="sale-badge">Sale!</div>}
-          <div className="product-basketCart">
-            <img src={basketCart} alt="basket cart" />
-          </div>
         </div>
 
         <div className={`product-card__info ${cardType}__info`}>

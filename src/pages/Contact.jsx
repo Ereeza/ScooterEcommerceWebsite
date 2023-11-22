@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import IntroHeader from "../components/IntroHeader";
 import Button from "../components/Shared/Button";
 import TextField from "../components/Shared/TextField";
@@ -6,6 +7,7 @@ import "../styles/contact.scss";
 import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
+  useEffect(() => window.scrollTo(0, 0), []);
   const [state, handleSubmit] = useForm("meqbpyje");
 
   return (
