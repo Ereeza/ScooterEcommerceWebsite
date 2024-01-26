@@ -2,13 +2,37 @@ import "../styles/footer.scss";
 import "../styles/global.scss";
 import logoFooter from "../assets/images/logo-footer.png";
 import { footerData } from "../data/dummyData";
-// import { footerPaymentData } from "../data/dummyData";
 import paymentIcons from "../assets/images/payment-icons.png";
 import Button from "./Shared/Button";
 import TextField from "./Shared/TextField";
 import { Link } from "react-router-dom";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Footer = () => {
+  const form = useRef();
+  const [isSubscribed, setIsSubscribed] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_y8hnbsv",
+        "template_a6s49nc",
+        form.current,
+        "4A-Sl6jYlquZV_OOz"
+      )
+      .then(
+        (result) => {
+          setIsSubscribed(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <footer className="footer">
       <div className="container footer-grid">
@@ -46,15 +70,22 @@ const Footer = () => {
         <div className="footer-block">
           <h5 className="footer-block__title">Sign up for special offers</h5>
           <div>
-            <div>
+            <form ref={form} onSubmit={sendEmail}>
               <TextField
                 className="footer-inputField"
                 placeholder="Email address"
+                type="email"
+                name="user_email"
               />
-            </div>
-            <div>
-              <Button className="button">Subscribe</Button>
-            </div>
+              {isSubscribed && (
+                <p className="subscription-message">
+                  You have successfully subscribed!
+                </p>
+              )}
+              <button className="button" type="submit" disabled={isSubscribed}>
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
       </div>
