@@ -41,7 +41,9 @@ const Home = () => {
               </div>
             </div>
             <div className="banner-btn">
-              <Button className="button">Shop now</Button>
+              <Link to={`/shop`}>
+                <Button className="button">Shop now</Button>
+              </Link>
             </div>
           </div>
 
@@ -65,8 +67,9 @@ const Home = () => {
             <ProductCard key={item.id} product={item} />
           ))}
         </div>
-
-        <Button className="button show-more__btn">Shop Now</Button>
+        <Link to="/shop">
+          <Button className="button show-more__btn">Shop Now</Button>
+        </Link>
       </div>
 
       <div className="section-seperator__wrapper">
